@@ -50,11 +50,45 @@ namespace task.Controllers
         }
 
         [HttpGet("{index}")]
-        public IActionResult Name(int index)
+        public IActionResult GetIndex(int index)
         {
-            string name = "";
-            Summaries[index] = name;
+            if (index < 0 || index >= Summaries.Count)
+                return BadRequest("Характер: скверный!!!");
+            string name = Summaries[index];
             return Ok();
+        }
+
+        [HttpGet("sortStrategy")]
+        public IActionResult GetAll(int? sortStrategy)
+        {
+            if (!sortStrategy.HasValue)
+                return Ok(Summaries);
+            else if (sortStrategy.Value == 1)
+            {
+                Summaries.Sort();
+                return Ok(Summaries);
+            }
+            else if (sortStrategy.Value == -1)
+            {
+                Summaries.Sort();
+                Summaries.Reverse();
+                return Ok(Summaries);
+            }
+
+            else return BadRequest("Значение параметра sortStrategy некорректно!");
+        }
+
+        [HttpGet("name")]
+        public IActionResult GetByName(string name)
+        {
+            string[] res = new string[Summaries.Count];
+            for (int i = 0; i < Summaries.Count; i++)
+            {
+                if (Summaries[i].ToLower().Contains(name.ToLower()))
+                    res[i] = Summaries[i];
+            }
+            res = res.Where(x => x != null).ToArray();
+            return Ok(res);
         }
     }
 }
