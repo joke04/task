@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>task</name>
+    </assembly>
+    <members>
+        <member name="M:task.Controllers.UserController.GetAll">
+            <summary>
+            Получение данных о пользователях
+            </summary>
+        </member>
+        <member name="M:task.Controllers.UserController.GetById(System.Int32)">
+            <summary>
+            Получение данных о пользователях
+            </summary>
+        </member>
+        <member name="M:task.Controllers.UserController.Add(task.Contracts.Users.CreateUserRequest)">
+             <summary>
+             Создание нового пользователя
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                  POST /Todo
+                     {
+                          "login" : "A4Tech Bloody B188",
+                          "password" : "!Pa$$word123@",
+                          "firstname" : "Иван",
+                          "lastname" : "Иванов",
+                          "middlename" : "Иванович"
+                     }
+            
+             </remarks>
+             <param name="model">Пользователь</param>
+             <returns></returns>
+        </member>
+        <member name="M:task.Controllers.UserController.Update(Domain.Models.User)">
+            <summary>
+            Изменение данных о пользователях
+            </summary>
+        </member>
+        <member name="M:task.Controllers.UserController.Delete(System.Int32)">
+            <summary>
+            Удаление данных о пользователях
+            </summary>
+        </member>
+    </members>
+</doc>
