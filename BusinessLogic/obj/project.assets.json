@@ -783,17 +783,17 @@
           }
         }
       },
-      "DataAccess/1.0.0": {
+      "Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.9"
         },
         "compile": {
-          "bin/placeholder/DataAccess.dll": {}
+          "bin/placeholder/Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/DataAccess.dll": {}
+          "bin/placeholder/Domain.dll": {}
         }
       }
     }
@@ -2017,38 +2017,33 @@
         "version.txt"
       ]
     },
-    "DataAccess/1.0.0": {
+    "Domain/1.0.0": {
       "type": "project",
-      "path": "../DataAccess/DataAccess.csproj",
-      "msbuildProject": "../DataAccess/DataAccess.csproj"
+      "path": "../Domain/Domain.csproj",
+      "msbuildProject": "../Domain/Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "DataAccess >= 1.0.0",
+      "Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.9",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.9"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\task\\BusinessLogic\\BusinessLogic.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\task\\BusinessLogic\\BusinessLogic.csproj",
       "projectName": "BusinessLogic",
-      "projectPath": "C:\\Users\\user\\Documents\\GitHub\\task\\BusinessLogic\\BusinessLogic.csproj",
+      "projectPath": "C:\\Users\\user\\Desktop\\task\\BusinessLogic\\BusinessLogic.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Documents\\GitHub\\task\\BusinessLogic\\obj\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\task\\BusinessLogic\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2056,15 +2051,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\user\\Documents\\GitHub\\task\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "C:\\Users\\user\\Documents\\GitHub\\task\\DataAccess\\DataAccess.csproj"
+            "C:\\Users\\user\\Desktop\\task\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\user\\Desktop\\task\\Domain\\Domain.csproj"
             }
           }
         }

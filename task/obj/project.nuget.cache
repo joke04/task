@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NmNNxpOLJqV7FMh5HkjG1WHUYzzgsD0YEavTH9Gdrb/bG3MJohcyUaEHjQLAF0GZAAXcHISzSmsjtCWY3PTxjQ==",
+  "dgSpecHash": "+2Y3M06MYZxSPgKjbKM1fx3nOMlr86AqQv7TKd9IPFY/UcyuZFWpAZ+NluIBS5h35Fc0OjZbjH7Y4uNqqLNyRA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Documents\\GitHub\\task\\task\\task.csproj",
+  "projectFilePath": "C:\\Users\\user\\Desktop\\task\\task\\task.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

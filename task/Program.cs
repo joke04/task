@@ -1,8 +1,9 @@
-using BusinessLogic.Interfaces;
+using Domain.Interfaces;
 using BusinessLogic.Services;
-using DataAccess.Models;
+using Domain.Models;
 using DataAccess.Wrapper;
 using Microsoft.EntityFrameworkCore;
+using DataAccess;
 
 namespace task
 {
@@ -12,7 +13,7 @@ namespace task
         {
             var builder = WebApplication.CreateBuilder(args);
             builder.Services.AddDbContext<shop_pharmacyContext>(
-                options => options.UseSqlServer("Server=lab116-p; Database=shop_pharmacy; User Id = sa; Password = 12345;"));
+                options => options.UseSqlServer("Server=lab116-p; Database=pharma; User Id = sa; Password = 12345;"));
 
             builder.Services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
             builder.Services.AddScoped<IUserService, UserService>();
