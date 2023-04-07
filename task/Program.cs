@@ -4,6 +4,9 @@ using Domain.Models;
 using DataAccess.Wrapper;
 using Microsoft.EntityFrameworkCore;
 using DataAccess;
+using Microsoft.Extensions.Options;
+using Microsoft.OpenApi.Models;
+using System.Reflection;
 
 namespace task
 {
@@ -23,7 +26,27 @@ namespace task
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
+            builder.Services.AddSwaggerGen(options =>
+            {
+                options.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Version = "v1",
+                    Title = "Интернет-аптека API",
+                    Description = "Интернет-аптека, позволяющая преобретать товары в Интернете",
+                    Contact = new OpenApiContact
+                    {
+                        Name = "8-999-999-99-99",
+                        Url = new Uri("https://example.com/contact")
+                    },
+                    License = new OpenApiLicense
+                    {
+                        Name = "Лицензия",
+                        Url = new Uri("https://example.com/license")
+                    }
+                });
+                var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
+            });
 
             var app = builder.Build();
 

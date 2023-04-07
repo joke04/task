@@ -1,7 +1,8 @@
 ﻿using Domain.Interfaces;
 using Domain.Models;
-using Microsoft.AspNetCore.Http;
+using Mapster;
 using Microsoft.AspNetCore.Mvc;
+using task.Contracts.Users;
 
 namespace task.Controllers
 {
@@ -15,33 +16,78 @@ namespace task.Controllers
             _userService = userService;
         }
 
-        [HttpGet]
+        /// <summary>
+        /// Получение данных о пользователях
+        /// </summary>
+        [HttpGet] /* для получения данных */
         public async Task<IActionResult> GetAll()
         {
             return Ok(await _userService.GetAll());
         }
 
+        /// <summary>
+        /// Получение данных о пользователях
+        /// </summary>
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            return Ok(await _userService.GetById(id));
+            var result = await _userService.GetById(id);
+            var response = new GetUserRequest()
+            {
+                UserNumber = result.UserNumber,
+                Namee = result.Namee,
+                Patronymic = result.Patronymic,
+                LastName = result.LastName,
+                Birthdate = result.Birthdate,
+                Nickname = result.Nickname,
+                Mail = result.Mail,
+                PhoneNumber = result.PhoneNumber,
+            };
+            return Ok(response);
         }
 
-        [HttpPost]
-        public async Task<IActionResult> Add(User user)
+        /// <summary>
+        /// Создание нового пользователя
+        /// </summary>
+        /// <remarks>
+        /// Пример запроса:
+        ///
+        ///      POST /Todo
+        ///         {
+        ///              "login" : "A4Tech Bloody B188",
+        ///              "password" : "!Pa$$word123@",
+        ///              "firstname" : "Иван",
+        ///              "lastname" : "Иванов",
+        ///              "middlename" : "Иванович"
+        ///         }
+        ///
+        /// </remarks>
+        /// <param name="model">Пользователь</param>
+        /// <returns></returns>
+
+        // POST api/<UsersControllers>
+        [HttpPost] /* для отправки сущностей к определенному ресурсу */
+        public async Task<IActionResult> Add(CreateUserRequest request)
         {
-            await _userService.Create(user);
+            var userDto = request.Adapt<User>();
+            await _userService.Create(userDto);
             return Ok();
         }
 
-        [HttpPut]
+        /// <summary>
+        /// Изменение данных о пользователях
+        /// </summary>
+        [HttpPut] /* для изменения существующей записи */
         public async Task<IActionResult> Update(User user)
         {
             await _userService.Update(user);
             return Ok();
         }
 
-        [HttpDelete]
+        /// <summary>
+        /// Удаление данных о пользователях
+        /// </summary>
+        [HttpDelete] /* для удаления данных */
         public async Task<IActionResult> Delete(int id)
         {
             await _userService.Delete(id);

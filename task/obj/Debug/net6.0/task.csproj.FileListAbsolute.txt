@@ -179,3 +179,8 @@ C:\Users\user\Desktop\task\task\obj\Debug\net6.0\task.genruntimeconfig.cache
 C:\Users\user\Desktop\task\task\obj\Debug\net6.0\ref\task.dll
 C:\Users\user\Desktop\task\task\bin\Debug\net6.0\Domain.dll
 C:\Users\user\Desktop\task\task\bin\Debug\net6.0\Domain.pdb
+C:\Users\user\Desktop\task\task\obj\Debug\net6.0\task.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\user\Desktop\task\task\bin\Debug\net6.0\task.xml
+C:\Users\user\Desktop\task\task\obj\Debug\net6.0\task.xml
+C:\Users\user\Desktop\task\task\bin\Debug\net6.0\Mapster.dll
+C:\Users\user\Desktop\task\task\bin\Debug\net6.0\Mapster.Core.dll
