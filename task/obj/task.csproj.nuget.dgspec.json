@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\task\\task\\task.csproj": {}
+    "C:\\Users\\Admin\\Desktop\\github\\task\\task\\task.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\task\\BusinessLogic\\BusinessLogic.csproj": {
+    "C:\\Users\\Admin\\Desktop\\github\\task\\BusinessLogic\\BusinessLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\task\\BusinessLogic\\BusinessLogic.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\github\\task\\BusinessLogic\\BusinessLogic.csproj",
         "projectName": "BusinessLogic",
-        "projectPath": "C:\\Users\\user\\Desktop\\task\\BusinessLogic\\BusinessLogic.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\task\\BusinessLogic\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\github\\task\\BusinessLogic\\BusinessLogic.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\github\\task\\BusinessLogic\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\user\\Desktop\\task\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\task\\Domain\\Domain.csproj"
+              "C:\\Users\\Admin\\Desktop\\github\\task\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Desktop\\github\\task\\Domain\\Domain.csproj"
               }
             }
           }
@@ -61,8 +65,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -71,21 +74,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.310\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\user\\Desktop\\task\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\Admin\\Desktop\\github\\task\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\task\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\github\\task\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\user\\Desktop\\task\\DataAccess\\DataAccess.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\task\\DataAccess\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\github\\task\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\github\\task\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -99,8 +106,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\user\\Desktop\\task\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\task\\Domain\\Domain.csproj"
+              "C:\\Users\\Admin\\Desktop\\github\\task\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Desktop\\github\\task\\Domain\\Domain.csproj"
               }
             }
           }
@@ -132,8 +139,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -142,21 +148,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.310\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\user\\Desktop\\task\\Domain\\Domain.csproj": {
+    "C:\\Users\\Admin\\Desktop\\github\\task\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\task\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\github\\task\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\user\\Desktop\\task\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\task\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\github\\task\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\github\\task\\Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -199,8 +209,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -209,21 +218,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.310\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\user\\Desktop\\task\\task\\task.csproj": {
+    "C:\\Users\\Admin\\Desktop\\github\\task\\task\\task.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\task\\task\\task.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\github\\task\\task\\task.csproj",
         "projectName": "task",
-        "projectPath": "C:\\Users\\user\\Desktop\\task\\task\\task.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\task\\task\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\github\\task\\task\\task.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\github\\task\\task\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -237,11 +250,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\user\\Desktop\\task\\BusinessLogic\\BusinessLogic.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\task\\BusinessLogic\\BusinessLogic.csproj"
+              "C:\\Users\\Admin\\Desktop\\github\\task\\BusinessLogic\\BusinessLogic.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Desktop\\github\\task\\BusinessLogic\\BusinessLogic.csproj"
               },
-              "C:\\Users\\user\\Desktop\\task\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\task\\DataAccess\\DataAccess.csproj"
+              "C:\\Users\\Admin\\Desktop\\github\\task\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Desktop\\github\\task\\DataAccess\\DataAccess.csproj"
               }
             }
           }
@@ -281,8 +294,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -294,7 +306,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.310\\RuntimeIdentifierGraph.json"
         }
       }
     }
