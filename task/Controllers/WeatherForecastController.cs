@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Mvc;
+п»їusing Microsoft.AspNetCore.Mvc;
 
 namespace task.Controllers
 {
@@ -8,8 +8,17 @@ namespace task.Controllers
     {
         private static List<string> Summaries = new()
         {
-        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-    };
+            "Freezing",
+            "Bracing",
+            "Chilly",
+            "Cool",
+            "Mild",
+            "Warm",
+            "Balmy",
+            "Hot",
+            "Sweltering",
+            "Scorching"
+        };
 
         private readonly ILogger<WeatherForecastController> _logger;
 
@@ -35,7 +44,7 @@ namespace task.Controllers
         public IActionResult Update(int index, string name)
         {
             if (index < 0 || index >= Summaries.Count)
-                return BadRequest("Характер: скверный!!!");
+                return BadRequest("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ!!!");
             Summaries[index] = name;
             return Ok();
         }
@@ -44,7 +53,7 @@ namespace task.Controllers
         public IActionResult Delete(int index)
         {
             if (index < 0 || index >= Summaries.Count)
-                return BadRequest("Характер: скверный!!!");
+                return BadRequest("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ!!!");
             Summaries.RemoveAt(index);
             return Ok();
         }
@@ -53,7 +62,7 @@ namespace task.Controllers
         public IActionResult GetIndex(int index)
         {
             if (index < 0 || index >= Summaries.Count)
-                return BadRequest("Характер: скверный!!!");
+                return BadRequest("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ!!!");
             string name = Summaries[index];
             return Ok();
         }
@@ -75,7 +84,7 @@ namespace task.Controllers
                 return Ok(Summaries);
             }
 
-            else return BadRequest("Значение параметра sortStrategy некорректно!");
+            else return BadRequest("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ sortStrategy пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ!");
         }
 
         [HttpGet("name")]

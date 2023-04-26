@@ -10,7 +10,7 @@ namespace BusinessLogic.Services
         private IRepositoryWrapper _repositoryWrapper;
         public UserService(IRepositoryWrapper repositoryWrapper)
         {
-             _repositoryWrapper = repositoryWrapper;
+            _repositoryWrapper = repositoryWrapper;
         }
         public async Task<List<User>> GetAll()
         {

@@ -1,12 +1,12 @@
-using Domain.Interfaces;
+п»їusing System.Reflection;
 using BusinessLogic.Services;
-using Domain.Models;
-using DataAccess.Wrapper;
-using Microsoft.EntityFrameworkCore;
 using DataAccess;
+using DataAccess.Wrapper;
+using Domain.Interfaces;
+using Domain.Models;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
-using System.Reflection;
 
 namespace task
 {
@@ -31,8 +31,8 @@ namespace task
                 options.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Version = "v1",
-                    Title = "Интернет-аптека API",
-                    Description = "Интернет-аптека, позволяющая преобретать товары в Интернете",
+                    Title = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ-пїЅпїЅпїЅпїЅпїЅпїЅ API",
+                    Description = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ-пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
                     Contact = new OpenApiContact
                     {
                         Name = "8-999-999-99-99",
@@ -40,7 +40,7 @@ namespace task
                     },
                     License = new OpenApiLicense
                     {
-                        Name = "Лицензия",
+                        Name = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
                         Url = new Uri("https://example.com/license")
                     }
                 });
