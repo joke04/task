@@ -24,13 +24,22 @@ namespace BusinessLogic.Services
         }
         public async Task Create(User model)
         {
+            if (model == null)
+            {
+                throw new ArgumentNullException(nameof(model));
+            }
+
+            if (string.IsNullOrEmpty(model.Namee))
+            {
+                throw new ArgumentException(nameof(model.Namee));
+            }
             await _repositoryWrapper.User.Create(model);
-            _repositoryWrapper.Save();
+            await _repositoryWrapper.Save();
         }
         public async Task Update(User model)
         {
-            _repositoryWrapper.User.Update(model);
-            _repositoryWrapper.Save();
+            await _repositoryWrapper.User.Update(model);
+            await _repositoryWrapper.Save();
         }
         public async Task Delete(int id)
         {
