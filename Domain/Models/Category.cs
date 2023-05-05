@@ -8,12 +8,13 @@ namespace Domain.Models
         public Category()
         {
             Products = new HashSet<Product>();
+            Filter = new HashSet<Filter>();
         }
 
         public int IdCategories { get; set; }
         public string CategoryName { get; set; } = null!;
 
-        public virtual Filter? Filter { get; set; }
+        public virtual ICollection<Filter>? Filter { get; set; }
         public virtual ICollection<Product> Products { get; set; }
     }
 }

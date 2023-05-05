@@ -33,6 +33,22 @@ namespace BusinessLogic.Services
             {
                 throw new ArgumentException(nameof(model.Namee));
             }
+
+            if (string.IsNullOrEmpty(model.LastName))
+            {
+                throw new ArgumentException(nameof(model.LastName));
+            }
+
+            if (string.IsNullOrEmpty(model.Nickname))
+            {
+                throw new ArgumentException(nameof(model.Nickname));
+            }
+
+            if (string.IsNullOrEmpty(model.PhoneNumber))
+            {
+                throw new ArgumentException(nameof(model.PhoneNumber));
+            }
+
             await _repositoryWrapper.User.Create(model);
             await _repositoryWrapper.Save();
         }
@@ -45,8 +61,8 @@ namespace BusinessLogic.Services
         {
             var user = await _repositoryWrapper.User
             .FindByCondition(x => x.UserNumber == id);
-            _repositoryWrapper.User.Delete(user.First());
-            _repositoryWrapper.Save();
+            await _repositoryWrapper.User.Delete(user.First());
+            await _repositoryWrapper.Save();
         }
     }
 }
