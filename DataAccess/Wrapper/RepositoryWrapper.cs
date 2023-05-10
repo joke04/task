@@ -12,14 +12,42 @@ namespace DataAccess.Wrapper
 {
     public class RepositoryWrapper : IRepositoryWrapper
     {
-        private shop_pharmacyContext _repoContext;
-        private IUserRepository _user;
+        shop_pharmacyContext _repoContext;
+        IUserRepository _user;
+        IProductRepository _product;
+        ICategoryRepository _category;
+        IBasketRepository _basket;
+
         public IUserRepository User
         {
             get
             {
                 if (_user == null) _user = new UserRepository(_repoContext);
                 return _user;
+            }
+        }
+        public IProductRepository Product
+        {
+            get
+            {
+                if (_product == null) _product = new ProductRepository(_repoContext);
+                return _product;
+            }
+        }
+        public ICategoryRepository Category
+        {
+            get
+            {
+                if (_category == null) _category = new CategoryRepository(_repoContext);
+                return _category;
+            }
+        }
+        public IBasketRepository Basket
+        {
+            get
+            {
+                if (_basket == null) _basket = new BasketRepository(_repoContext);
+                return _basket;
             }
         }
         public RepositoryWrapper(shop_pharmacyContext repositoryContext)

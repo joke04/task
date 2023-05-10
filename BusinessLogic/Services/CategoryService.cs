@@ -23,7 +23,7 @@ namespace BusinessLogic.Services
         public async Task<Category> GetById(int id)
         {
             var Category = await _repositoryWrapper.Category
-            .FindByCondition(x => x.CategotyId == id);
+            .FindByCondition(x => x.IdCategories == id);
             return Category.First();
         }
         public async Task Create(Category model)
@@ -33,14 +33,14 @@ namespace BusinessLogic.Services
                 throw new ArgumentNullException(nameof(model));
             }
 
-            if (model.CategotyId == 0)
+            if (model.IdCategories == 0)
             {
-                throw new ArgumentException(nameof(model.CategotyId));
+                throw new ArgumentException(nameof(model.IdCategories));
             }
 
-            if (string.IsNullOrEmpty(model.CategotyName))
+            if (string.IsNullOrEmpty(model.CategoryName))
             {
-                throw new ArgumentException(nameof(model.CategotyName));
+                throw new ArgumentException(nameof(model.CategoryName));
             }
 
             await _repositoryWrapper.Category.Create(model);
@@ -54,7 +54,7 @@ namespace BusinessLogic.Services
         public async Task Delete(int id)
         {
             var Category = await _repositoryWrapper.Category
-            .FindByCondition(x => x.CategotyId == id);
+            .FindByCondition(x => x.IdCategories == id);
             await _repositoryWrapper.Category.Delete(Category.First());
             await _repositoryWrapper.Save();
         }

@@ -16,7 +16,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решен
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogic.Tests", "..\BusinessLogic.Tests\BusinessLogic.Tests.csproj", "{EF1D2737-63B4-413E-B2BA-EEFEC8C77F17}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLogic.Tests", "..\BusinessLogic.Tests\BusinessLogic.Tests.csproj", "{EF1D2737-63B4-413E-B2BA-EEFEC8C77F17}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1ACF6E3D-57A1-4E3A-A0A2-BA0BE6E1B5C5}"
 EndProject

@@ -10,6 +10,9 @@ namespace DataAccess.Wrapper
     public interface IRepositoryWrapper
     {
         IUserRepository User { get; }
+        IBasketRepository Basket { get; }
+        ICategoryRepository Category { get; }
+        IProductRepository Product { get; }
         Task Save();
     }
 }

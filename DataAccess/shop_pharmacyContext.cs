@@ -115,8 +115,8 @@ namespace DataAccess
                     .HasColumnName("vacation_from_the_pharmacy");
 
                 entity.HasOne(d => d.IdCategoriesNavigation)
-                    .WithOne(p => p.Filter)
-                    .HasForeignKey<Filter>(d => d.IdCategories)
+                    .WithMany(p => p.Filter)
+                    .HasForeignKey(d => d.IdCategories)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK__filter__Id_categ__3E52440B");
             });
