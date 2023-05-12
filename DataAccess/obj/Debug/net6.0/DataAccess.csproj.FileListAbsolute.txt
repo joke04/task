@@ -46,3 +46,6 @@ C:\Users\Admin\Desktop\github\task\DataAccess\obj\Debug\net6.0\refint\DataAccess
 C:\Users\Admin\Desktop\github\task\DataAccess\obj\Debug\net6.0\DataAccess.pdb
 C:\Users\Admin\Desktop\github\task\DataAccess\obj\Debug\net6.0\DataAccess.genruntimeconfig.cache
 C:\Users\Admin\Desktop\github\task\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll
+C:\Users\user\Documents\GitHub\task\DataAccess\bin\Debug\net6.0\Domain.dll
+C:\Users\user\Documents\GitHub\task\DataAccess\bin\Debug\net6.0\Domain.pdb
+C:\Users\user\Documents\GitHub\task\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CopyComplete
