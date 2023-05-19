@@ -8,7 +8,7 @@ namespace Domain.Models
         public User()
         {
             Baskets = new HashSet<Basket>();
-            Orderrs = new HashSet<Orderr>();
+            Orderings = new HashSet<Ordering>();
             SavedAddresses = new HashSet<SavedAddress>();
         }
 
@@ -22,7 +22,7 @@ namespace Domain.Models
         public DateTime Birthdate { get; set; }
 
         public virtual ICollection<Basket> Baskets { get; set; }
-        public virtual ICollection<Orderr> Orderrs { get; set; }
+        public virtual ICollection<Ordering> Orderings { get; set; }
         public virtual ICollection<SavedAddress> SavedAddresses { get; set; }
     }
 }

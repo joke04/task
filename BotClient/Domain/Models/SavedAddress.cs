@@ -6,7 +6,6 @@ namespace Domain.Models
     public partial class SavedAddress
     {
         public int UserIdd { get; set; }
-        public int AddressId { get; set; }
         public string City { get; set; } = null!;
         public string Street { get; set; } = null!;
         public int House { get; set; }
