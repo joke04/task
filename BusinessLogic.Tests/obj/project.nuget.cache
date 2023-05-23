@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Mr6heXW+GRlB+lD6GeQCiWjbNQNoaWtN0SyaGfm5Ee0/FXRuwj9I019QerN3r2zkyGyuv9b/QL+itgYcvg2aMg==",
+  "dgSpecHash": "JodBoPd+WlcI4X7Br+M721BGZ6MI7ja6E7bMwVvgsH/BNUatdFo4tIwD6yCcwch4I44kS4UqJ/ugsYV71+0ncA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Desktop\\Yanix practic\\task\\BusinessLogic.Tests\\BusinessLogic.Tests.csproj",
+  "projectFilePath": "C:\\Users\\user\\Desktop\\task\\BusinessLogic.Tests\\BusinessLogic.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",

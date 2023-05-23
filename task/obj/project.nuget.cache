@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oRFTgPeykj7t+ixsc+8NCJVT1DNzrtT7yOZljXX4DwgLzYb+dvM+3tqMZghwzuA3f+cEXy9nQWvVYLCxhFCkCA==",
+  "dgSpecHash": "xZWSRDMEjgAbAS5gbH2DQmuWnC6Msk+iauuYmyLt6G15avkzQLUDcfeWK+YBlH63+W8tdeiF96Qa1HfSjN3DVA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Desktop\\Yanix practic\\task\\task\\task.csproj",
+  "projectFilePath": "C:\\Users\\user\\Desktop\\task\\task\\task.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\mapster\\7.3.0\\mapster.7.3.0.nupkg.sha512",

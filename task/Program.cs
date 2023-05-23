@@ -16,7 +16,7 @@ namespace task
         {
             var builder = WebApplication.CreateBuilder(args);
             builder.Services.AddDbContext<shop_pharmacyContext>(
-                options => options.UseSqlServer("Server=LAB104-9\\SQLEXPRESS; Database=shop_pharma; User Id = sa; Password = 12345;"));
+                options => options.UseSqlServer("Server=lab116-p; Database=shop_pharmacy; User Id = sa; Password = 12345;"));
 
             builder.Services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
             builder.Services.AddScoped<IUserService, UserService>();

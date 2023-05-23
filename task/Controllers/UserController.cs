@@ -32,7 +32,7 @@ namespace task.Controllers
         public async Task<IActionResult> GetById(int id)
         {
             var result = await _userService.GetById(id);
-            var response = new GetUserRequest()
+            var response = new GetBasketRequest()
             {
                 UserNumber = result.UserNumber,
                 Namee = result.Namee,

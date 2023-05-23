@@ -1,6 +1,6 @@
 ﻿namespace task.Contracts.Users
 {
-    public class GetUserRequest
+    public class GetBasketRequest
     {
         public int UserNumber { get; set; }
         public string Nickname { get; set; } = null!;
