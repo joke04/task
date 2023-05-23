@@ -16,7 +16,7 @@ namespace task
         {
             var builder = WebApplication.CreateBuilder(args);
             builder.Services.AddDbContext<shop_pharmacyContext>(
-                options => options.UseSqlServer("Server=lab116-p; Database=pharma; User Id = sa; Password = 12345;"));
+                options => options.UseSqlServer("Server=LAB104-9\\SQLEXPRESS; Database=shop_pharma; User Id = sa; Password = 12345;"));
 
             builder.Services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
             builder.Services.AddScoped<IUserService, UserService>();
@@ -31,8 +31,8 @@ namespace task
                 options.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Version = "v1",
-                    Title = "��������-������ API",
-                    Description = "��������-������, ����������� ����������� ������ � ���������",
+                    Title = "Internet-apteka API",
+                    Description = "Internet-apteka, where u can buy smth vitamines or pils",
                     Contact = new OpenApiContact
                     {
                         Name = "8-999-999-99-99",
@@ -40,7 +40,7 @@ namespace task
                     },
                     License = new OpenApiLicense
                     {
-                        Name = "��������",
+                        Name = "License",
                         Url = new Uri("https://example.com/license")
                     }
                 });

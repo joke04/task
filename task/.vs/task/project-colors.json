@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "e5e42561-96bc-404c-afe6-91c3e0a119ab": {
+      "ProjectGuid": "e5e42561-96bc-404c-afe6-91c3e0a119ab",
+      "DisplayName": "Domain",
+      "ColorIndex": 0
+    },
+    "ef1d2737-63b4-413e-b2ba-eefec8c77f17": {
+      "ProjectGuid": "ef1d2737-63b4-413e-b2ba-eefec8c77f17",
+      "DisplayName": "BusinessLogic.Tests",
+      "ColorIndex": 1
+    },
+    "a7b56595-a0c5-4f60-aad2-52e0077618ee": {
+      "ProjectGuid": "a7b56595-a0c5-4f60-aad2-52e0077618ee",
+      "DisplayName": "task",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

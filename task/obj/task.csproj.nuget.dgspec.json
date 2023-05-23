@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Documents\\GitHub\\task\\task\\task.csproj": {}
+    "C:\\Users\\user\\Desktop\\Yanix practic\\task\\task\\task.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Documents\\GitHub\\task\\BusinessLogic\\BusinessLogic.csproj": {
+    "C:\\Users\\user\\Desktop\\Yanix practic\\task\\BusinessLogic\\BusinessLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\task\\BusinessLogic\\BusinessLogic.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\Yanix practic\\task\\BusinessLogic\\BusinessLogic.csproj",
         "projectName": "BusinessLogic",
-        "projectPath": "C:\\Users\\user\\Documents\\GitHub\\task\\BusinessLogic\\BusinessLogic.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\Yanix practic\\task\\BusinessLogic\\BusinessLogic.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Documents\\GitHub\\task\\BusinessLogic\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\Yanix practic\\task\\BusinessLogic\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\user\\Documents\\GitHub\\task\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\user\\Documents\\GitHub\\task\\Domain\\Domain.csproj"
+              "C:\\Users\\user\\Desktop\\Yanix practic\\task\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\Yanix practic\\task\\Domain\\Domain.csproj"
               }
             }
           }
@@ -61,8 +61,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -71,18 +70,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\user\\Documents\\GitHub\\task\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\user\\Desktop\\Yanix practic\\task\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\task\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\Yanix practic\\task\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\user\\Documents\\GitHub\\task\\DataAccess\\DataAccess.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\Yanix practic\\task\\DataAccess\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Documents\\GitHub\\task\\DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\Yanix practic\\task\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -99,8 +98,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\user\\Documents\\GitHub\\task\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\user\\Documents\\GitHub\\task\\Domain\\Domain.csproj"
+              "C:\\Users\\user\\Desktop\\Yanix practic\\task\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\Yanix practic\\task\\Domain\\Domain.csproj"
               }
             }
           }
@@ -132,8 +131,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -142,18 +140,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\user\\Documents\\GitHub\\task\\Domain\\Domain.csproj": {
+    "C:\\Users\\user\\Desktop\\Yanix practic\\task\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\task\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\Yanix practic\\task\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\user\\Documents\\GitHub\\task\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\Yanix practic\\task\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Documents\\GitHub\\task\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\Yanix practic\\task\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -199,8 +197,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -209,18 +206,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\user\\Documents\\GitHub\\task\\task\\task.csproj": {
+    "C:\\Users\\user\\Desktop\\Yanix practic\\task\\task\\task.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\task\\task\\task.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\Yanix practic\\task\\task\\task.csproj",
         "projectName": "task",
-        "projectPath": "C:\\Users\\user\\Documents\\GitHub\\task\\task\\task.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\Yanix practic\\task\\task\\task.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Documents\\GitHub\\task\\task\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\Yanix practic\\task\\task\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -237,11 +234,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\user\\Documents\\GitHub\\task\\BusinessLogic\\BusinessLogic.csproj": {
-                "projectPath": "C:\\Users\\user\\Documents\\GitHub\\task\\BusinessLogic\\BusinessLogic.csproj"
+              "C:\\Users\\user\\Desktop\\Yanix practic\\task\\BusinessLogic\\BusinessLogic.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\Yanix practic\\task\\BusinessLogic\\BusinessLogic.csproj"
               },
-              "C:\\Users\\user\\Documents\\GitHub\\task\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\user\\Documents\\GitHub\\task\\DataAccess\\DataAccess.csproj"
+              "C:\\Users\\user\\Desktop\\Yanix practic\\task\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\Yanix practic\\task\\DataAccess\\DataAccess.csproj"
               }
             }
           }
@@ -281,8 +278,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -294,7 +290,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

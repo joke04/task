@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oMnny6FAvdzrkcBYLAh6IPoq95f/bclfrxAJsBa16xyk6084/zEwxN19UUFj/F/rLQRUBvNbeC4mmQJmWd/R+w==",
+  "dgSpecHash": "9mED/yI1JZX2/Pq6YsiWX27P+wDDv/oTEanioYf0C4Asb1f7FYJaScx8EoCDgZD4p9Xq8/HVfzFF4/1LwUDpbA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Documents\\GitHub\\task\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\user\\Desktop\\Yanix practic\\task\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
