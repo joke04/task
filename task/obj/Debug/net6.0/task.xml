@@ -52,19 +52,19 @@
         </member>
         <member name="M:task.Controllers.CategoryController.GetAll">
             <summary>
-            Получение списка всех корзин БД
+            Получение списка всех категорий БД
             </summary>
         </member>
         <member name="M:task.Controllers.CategoryController.GetById(System.Int32)">
             <summary>
-            Возвращение айди всех корзины
+            Возвращение айди всех категорий
             </summary>
             <param name="id"></param>
             <returns></returns>
         </member>
         <member name="M:task.Controllers.CategoryController.Add(task.Contracts.Basket.CreateBasketRequest)">
              <summary>
-             Создание новой корзины
+             Создание новой категории
              </summary>
              <remarks>
              Пример запроса:
@@ -79,7 +79,7 @@
                  }
             
              </remarks>
-             <param name="model">Корзина</param>
+             <param name="model">Категорий</param>
              <returns></returns>
         </member>
         <member name="M:task.Controllers.CategoryController.Update(Domain.Models.Category)">
@@ -91,7 +91,7 @@
         </member>
         <member name="M:task.Controllers.CategoryController.Delete(System.Int32)">
             <summary>
-            Удаление корзины
+            Удаление категории
             </summary>
             <param name="id"></param>
             <returns></returns>

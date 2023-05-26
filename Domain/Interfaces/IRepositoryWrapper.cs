@@ -13,6 +13,9 @@ namespace DataAccess.Wrapper
         IBasketRepository Basket { get; }
         ICategoryRepository Category { get; }
         IProductRepository Product { get; }
+        IFilterRepository Filter { get; }
+        IOrderingRepository Ordering { get; }
+        ISavedAddressRepository SavedAddress { get; }
         Task Save();
     }
 }

@@ -1,4 +1,5 @@
 ﻿using DataAccess.Wrapper;
+using Domain.Interfaces;
 using Domain.Models;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLogic.Services
 {
-    public class BasketService
+    public class BasketService : IBasketService
     {
         IRepositoryWrapper _repositoryWrapper;
         public BasketService(IRepositoryWrapper repositoryWrapper)

@@ -18,7 +18,7 @@ namespace task.Controllers
             _categoryService = categoryService;
         }
         /// <summary>
-        /// Получение списка всех корзин БД
+        /// Получение списка всех категорий БД
         /// </summary>
         [HttpGet]
         public async Task<IActionResult> GetAll()
@@ -29,7 +29,7 @@ namespace task.Controllers
 
 
         /// <summary>
-        /// Возвращение айди всех корзины
+        /// Возвращение айди всех категорий
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
@@ -46,7 +46,7 @@ namespace task.Controllers
         }
 
         /// <summary>
-        /// Создание новой корзины
+        /// Создание новой категории
         /// </summary>
         /// <remarks>
         /// Пример запроса:
@@ -61,9 +61,9 @@ namespace task.Controllers
         ///     }
         ///
         /// </remarks>
-        /// <param name="model">Корзина</param>
+        /// <param name="model">Категорий</param>
         /// <returns></returns>
-        // POST api/<BaskerController>
+        // POST api/<CategoryController>
 
         [HttpPost]
         public async Task<IActionResult> Add(CreateBasketRequest request)
@@ -85,7 +85,7 @@ namespace task.Controllers
         }
 
         /// <summary>
-        /// Удаление корзины
+        /// Удаление категории
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLogic.Services
 {
-    public class ProductService
+    public class ProductService : IProductService
     {
         IRepositoryWrapper _repositoryWrapper;
         public ProductService(IRepositoryWrapper repositoryWrapper)

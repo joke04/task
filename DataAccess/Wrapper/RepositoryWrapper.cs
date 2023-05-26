@@ -17,6 +17,9 @@ namespace DataAccess.Wrapper
         IProductRepository _product;
         ICategoryRepository _category;
         IBasketRepository _basket;
+        IFilterRepository _filter;
+        IOrderingRepository _ordering;
+        ISavedAddressRepository _savedAddress;
 
         public IUserRepository User
         {
@@ -50,6 +53,15 @@ namespace DataAccess.Wrapper
                 return _basket;
             }
         }
+        public IFilterRepository Filter
+        {
+            get
+            {
+                if (_filter == null) _filter = new FilterRepository(_repoContext);
+                return _user;
+            }
+        }
+
         public RepositoryWrapper(shop_pharmacyContext repositoryContext)
         {
             _repoContext = repositoryContext;
