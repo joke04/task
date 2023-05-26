@@ -4,6 +4,282 @@
         <name>task</name>
     </assembly>
     <members>
+        <member name="M:task.Controllers.BasketController.GetAll">
+            <summary>
+            Получение списка всех корзин БД
+            </summary>
+        </member>
+        <member name="M:task.Controllers.BasketController.GetById(System.Int32)">
+            <summary>
+            Возвращение айди всех корзины
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:task.Controllers.BasketController.Add(task.Contracts.Basket.CreateBasketRequest)">
+             <summary>
+             Создание новой корзины
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /Todo
+                 {
+                     "login" : "A4Tech Bloody B188",
+                     "password" : "!Pa$$word123@",
+                     "firstname" : "Иван",
+                     "lastname" : "Иванов",
+                     "middlename" : "Иванович"
+                 }
+            
+             </remarks>
+             <param name="model">Корзина</param>
+             <returns></returns>
+        </member>
+        <member name="M:task.Controllers.BasketController.Update(Domain.Models.Basket)">
+            <summary>
+            Изменение сущностей записи
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:task.Controllers.BasketController.Delete(System.Int32)">
+            <summary>
+            Удаление корзины
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:task.Controllers.CategoryController.GetAll">
+            <summary>
+            Получение списка всех корзин БД
+            </summary>
+        </member>
+        <member name="M:task.Controllers.CategoryController.GetById(System.Int32)">
+            <summary>
+            Возвращение айди всех корзины
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:task.Controllers.CategoryController.Add(task.Contracts.Basket.CreateBasketRequest)">
+             <summary>
+             Создание новой корзины
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /Todo
+                 {
+                     "login" : "A4Tech Bloody B188",
+                     "password" : "!Pa$$word123@",
+                     "firstname" : "Иван",
+                     "lastname" : "Иванов",
+                     "middlename" : "Иванович"
+                 }
+            
+             </remarks>
+             <param name="model">Корзина</param>
+             <returns></returns>
+        </member>
+        <member name="M:task.Controllers.CategoryController.Update(Domain.Models.Category)">
+            <summary>
+            Изменение сущностей записи
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:task.Controllers.CategoryController.Delete(System.Int32)">
+            <summary>
+            Удаление корзины
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:task.Controllers.FilterController.GetAll">
+            <summary>
+            Получение списка всех фильтров БД
+            </summary>
+        </member>
+        <member name="M:task.Controllers.FilterController.GetById(System.Int32)">
+            <summary>
+            Возвращение айди всех фильтров
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:task.Controllers.FilterController.Add(task.Contracts.Filter.CreateFilterRequest)">
+             <summary>
+             Создание нового фильтра
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /Todo
+                 {
+                     "login" : "A4Tech Bloody B188",
+                     "password" : "!Pa$$word123@",
+                     "firstname" : "Иван",
+                     "lastname" : "Иванов",
+                     "middlename" : "Иванович"
+                 }
+            
+             </remarks>
+             <param name="model">Фильтр</param>
+             <returns></returns>
+        </member>
+        <member name="M:task.Controllers.FilterController.Update(Domain.Models.Filter)">
+            <summary>
+            Изменение сущностей записи
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:task.Controllers.FilterController.Delete(System.Int32)">
+            <summary>
+            Удаление фильтра
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:task.Controllers.OrderingController.GetAll">
+            <summary>
+            Получение списка всех заказов БД
+            </summary>
+        </member>
+        <member name="M:task.Controllers.OrderingController.GetById(System.Int32)">
+            <summary>
+            Возвращение айди всех заказов
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:task.Controllers.OrderingController.Add(task.Contracts.Ordering.CreateOrderingRequest)">
+             <summary>
+             Создание нового заказа
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /Todo
+                 {
+                     "login" : "A4Tech Bloody B188",
+                     "password" : "!Pa$$word123@",
+                     "firstname" : "Иван",
+                     "lastname" : "Иванов",
+                     "middlename" : "Иванович"
+                 }
+            
+             </remarks>
+             <param name="model">Заказ</param>
+             <returns></returns>
+        </member>
+        <member name="M:task.Controllers.OrderingController.Update(Domain.Models.Ordering)">
+            <summary>
+            Изменение сущностей записи
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:task.Controllers.OrderingController.Delete(System.Int32)">
+            <summary>
+            Удаление заказа
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:task.Controllers.ProductController.GetAll">
+            <summary>
+            Получение списка всех товаров БД
+            </summary>
+        </member>
+        <member name="M:task.Controllers.ProductController.GetById(System.Int32)">
+            <summary>
+            Возвращение айди всех товаров
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:task.Controllers.ProductController.Add(task.Contracts.Product.CreateProductRequest)">
+             <summary>
+             Создание нового товара
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /Todo
+                 {
+                     "login" : "A4Tech Bloody B188",
+                     "password" : "!Pa$$word123@",
+                     "firstname" : "Иван",
+                     "lastname" : "Иванов",
+                     "middlename" : "Иванович"
+                 }
+            
+             </remarks>
+             <param name="model">Продукт</param>
+             <returns></returns>
+        </member>
+        <member name="M:task.Controllers.ProductController.Update(Domain.Models.Product)">
+            <summary>
+            Изменение сущностей записи
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:task.Controllers.ProductController.Delete(System.Int32)">
+            <summary>
+            Удаление товара
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:task.Controllers.SavedAddressController.GetAll">
+            <summary>
+            Получение списка всех сохраннных адресов БД
+            </summary>
+        </member>
+        <member name="M:task.Controllers.SavedAddressController.GetById(System.Int32)">
+            <summary>
+            Возвращение айди всех адресов
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:task.Controllers.SavedAddressController.Add(task.Contracts.SavedAddress.CreateSavedAddressRequest)">
+             <summary>
+             Создание нового адреса
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /Todo
+                 {
+                     "login" : "A4Tech Bloody B188",
+                     "password" : "!Pa$$word123@",
+                     "firstname" : "Иван",
+                     "lastname" : "Иванов",
+                     "middlename" : "Иванович"
+                 }
+            
+             </remarks>
+             <param name="model">Адрес</param>
+             <returns></returns>
+        </member>
+        <member name="M:task.Controllers.SavedAddressController.Update(Domain.Models.SavedAddress)">
+            <summary>
+            Изменение сущностей записи
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:task.Controllers.SavedAddressController.Delete(System.Int32)">
+            <summary>
+            Удаление адреса
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
         <member name="M:task.Controllers.UserController.GetAll">
             <summary>
             Получение данных о пользователях

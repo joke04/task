@@ -4,46 +4,50 @@ using Mapster;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using task.Contracts.Basket;
+using task.Contracts.Product;
 
 namespace task.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class BasketController : ControllerBase
+    public class ProductController : ControllerBase
     {
-        private IBasketService _basketService;
-        public BasketController(IBasketService basketService)
+        private IProductService _productService;
+        public ProductController(IProductService productService)
         {
-            _basketService = basketService;
+            _productService = productService;
         }
         /// <summary>
-        /// Получение списка всех корзин БД
+        /// Получение списка всех товаров БД
         /// </summary>
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            return Ok(await _basketService.GetAll());
+            return Ok(await _productService.GetAll());
         }
         /// <summary>
-        /// Возвращение айди всех корзины
+        /// Возвращение айди всех товаров
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
         [HttpGet(template: "{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var result = await _basketService.GetById(id);
-            var response = new GetBasketRequest()
+            var result = await _productService.GetById(id);
+            var response = new GetProductRequest()
             {
-                UserIdd = result.UserIdd,
-                ProductId = result.BasketNumber,
-                QuantityOfGoods = result.QuantityOfGoods,
+                NumberProduct = result.NumberProduct,
+                IdCategories = result.IdCategories,
+                Namee = result.Namee,
+                ProductPrice = result.ProductPrice,
+                ProductDescription = result.ProductDescription,
+                Article = result.Article
             };
-            return Ok(await _basketService.GetById(id));
+            return Ok(await _productService.GetById(id));
         }
 
         /// <summary>
-        /// Создание новой корзины
+        /// Создание нового товара
         /// </summary>
         /// <remarks>
         /// Пример запроса:
@@ -58,15 +62,15 @@ namespace task.Controllers
         ///     }
         ///
         /// </remarks>
-        /// <param name="model">Корзина</param>
+        /// <param name="model">Продукт</param>
         /// <returns></returns>
-        // POST api/<BasketController>
+        // POST api/<ProductController>
 
         [HttpPost]
-        public async Task<IActionResult> Add(CreateBasketRequest request)
+        public async Task<IActionResult> Add(CreateProductRequest request)
         {
-            var basketto = request.Adapt<Basket>();
-            await _basketService.Create(basketto);
+            var productto = request.Adapt<Product>();
+            await _productService.Create(productto);
             return Ok();
         }
         /// <summary>
@@ -75,21 +79,21 @@ namespace task.Controllers
         /// <param name="id"></param>
         /// <returns></returns>
         [HttpPut]
-        public async Task<IActionResult> Update(Basket basket)
+        public async Task<IActionResult> Update(Product product)
         {
-            await _basketService.Update(basket);
+            await _productService.Update(product);
             return Ok();
         }
 
         /// <summary>
-        /// Удаление корзины
+        /// Удаление товара
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
         [HttpDelete]
         public async Task<IActionResult> Delete(int id)
         {
-            await _basketService.Delete(id);
+            await _productService.Delete(id);
             return Ok();
         }
     }

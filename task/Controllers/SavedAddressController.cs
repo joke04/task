@@ -4,46 +4,51 @@ using Mapster;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using task.Contracts.Basket;
+using task.Contracts.SavedAddress;
 
 namespace task.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class BasketController : ControllerBase
+    public class SavedAddressController : ControllerBase
     {
-        private IBasketService _basketService;
-        public BasketController(IBasketService basketService)
+        private ISavedAddressService _addressService;
+        public SavedAddressController(ISavedAddressService addressService)
         {
-            _basketService = basketService;
+            _addressService = addressService;
         }
         /// <summary>
-        /// Получение списка всех корзин БД
+        /// Получение списка всех сохраннных адресов БД
         /// </summary>
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            return Ok(await _basketService.GetAll());
+            return Ok(await _addressService.GetAll());
         }
         /// <summary>
-        /// Возвращение айди всех корзины
+        /// Возвращение айди всех адресов
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
         [HttpGet(template: "{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var result = await _basketService.GetById(id);
-            var response = new GetBasketRequest()
+            var result = await _addressService.GetById(id);
+            var response = new GetSavedAddressRequest()
             {
                 UserIdd = result.UserIdd,
-                ProductId = result.BasketNumber,
-                QuantityOfGoods = result.QuantityOfGoods,
+                City = result.City,
+                Street = result.Street,
+                House = result.House,
+                Construction = result.Construction,
+                Flat = result.Flat,
+                AddressName = result.AddressName
             };
-            return Ok(await _basketService.GetById(id));
+            return Ok(await _addressService.GetById(id));
         }
 
         /// <summary>
-        /// Создание новой корзины
+        /// Создание нового адреса
         /// </summary>
         /// <remarks>
         /// Пример запроса:
@@ -58,15 +63,15 @@ namespace task.Controllers
         ///     }
         ///
         /// </remarks>
-        /// <param name="model">Корзина</param>
+        /// <param name="model">Адрес</param>
         /// <returns></returns>
-        // POST api/<BasketController>
+        // POST api/<SavedAddrressController>
 
         [HttpPost]
-        public async Task<IActionResult> Add(CreateBasketRequest request)
+        public async Task<IActionResult> Add(CreateSavedAddressRequest request)
         {
-            var basketto = request.Adapt<Basket>();
-            await _basketService.Create(basketto);
+            var addressto = request.Adapt<SavedAddress>();
+            await _addressService.Create(addressto);
             return Ok();
         }
         /// <summary>
@@ -75,21 +80,21 @@ namespace task.Controllers
         /// <param name="id"></param>
         /// <returns></returns>
         [HttpPut]
-        public async Task<IActionResult> Update(Basket basket)
+        public async Task<IActionResult> Update(SavedAddress savedAddress)
         {
-            await _basketService.Update(basket);
+            await _addressService.Update(savedAddress);
             return Ok();
         }
 
         /// <summary>
-        /// Удаление корзины
+        /// Удаление адреса
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
         [HttpDelete]
         public async Task<IActionResult> Delete(int id)
         {
-            await _basketService.Delete(id);
+            await _addressService.Delete(id);
             return Ok();
         }
     }
