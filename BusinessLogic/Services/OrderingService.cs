@@ -1,4 +1,5 @@
 ﻿using DataAccess.Wrapper;
+using Domain.Interfaces;
 using Domain.Models;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLogic.Services
 {
-    public class OrderingService
+    public class OrderingService : IOrderingService
     {
         private IRepositoryWrapper _repositoryWrapper;
         public OrderingService(IRepositoryWrapper repositoryWrapper)

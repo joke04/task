@@ -58,7 +58,23 @@ namespace DataAccess.Wrapper
             get
             {
                 if (_filter == null) _filter = new FilterRepository(_repoContext);
-                return _user;
+                return _filter;
+            }
+        }
+        public IOrderingRepository Ordering
+        {
+            get
+            {
+                if (_ordering == null) _ordering = new OrderingRepository(_repoContext);
+                return _ordering;
+            }
+        }
+        public ISavedAddressRepository SavedAddress
+        {
+            get
+            {
+                if (_savedAddress == null) _savedAddress = new SavedAddressRepository(_repoContext);
+                return _savedAddress;
             }
         }
 

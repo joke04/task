@@ -1,4 +1,5 @@
 ﻿using DataAccess.Wrapper;
+using Domain.Interfaces;
 using Domain.Models;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLogic.Services
 {
-    public class SavedAddressService
+    public class SavedAddressService : ISavedAddressService
     {
         private IRepositoryWrapper _repositoryWrapper;
         public SavedAddressService(IRepositoryWrapper repositoryWrapper)
@@ -22,7 +23,7 @@ namespace BusinessLogic.Services
         public async Task<SavedAddress> GetById(int id)
         {
             var adres = await _repositoryWrapper.SavedAddress
-            .FindByCondition(x => x.AddressName == id);
+            .FindByCondition(x => x.AddressId == id);
             return adres.First();
         }
         public async Task Create(SavedAddress model)
@@ -55,7 +56,7 @@ namespace BusinessLogic.Services
         public async Task Delete(int id)
         {
             var adres = await _repositoryWrapper.SavedAddress
-            .FindByCondition(x => x.AddressName == id);
+            .FindByCondition(x => x.AddressId == id);
             await _repositoryWrapper.SavedAddress.Delete(adres.First());
             await _repositoryWrapper.Save();
         }

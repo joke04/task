@@ -21,8 +21,11 @@ namespace task
 
             builder.Services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
             builder.Services.AddScoped<IUserService, UserService>();
+            builder.Services.AddScoped<IBasketService, BasketService>();
+            builder.Services.AddScoped<IFilterService, FilterService>();
+            builder.Services.AddScoped<IOrderingService, OrderingService>();
             builder.Services.AddScoped<IProductService, ProductService>();
-            builder
+            builder.Services.AddScoped<ISavedAddressService, SavedAddressService>();
 
             // Add services to the container.
 

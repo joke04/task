@@ -1,5 +1,10 @@
+using BusinessLogic.Services;
+using DataAccess.Wrapper;
+using DataAccess;
+using Domain.Interfaces;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
+using Microsoft.EntityFrameworkCore;
 using Web.Data;
 
 namespace Web
@@ -10,10 +15,16 @@ namespace Web
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
-            builder.Services.AddRazorPages();
-            builder.Services.AddServerSideBlazor();
-            builder.Services.AddSingleton<WeatherForecastService>();
+            builder.Services.AddDbContext<shop_pharmacyContext>(
+                options => options.UseSqlServer("Server=lab116-p; Database=shop_pharmacy; User Id = sa; Password = 12345;"));
+
+            builder.Services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
+            builder.Services.AddScoped<IUserService, UserService>();
+            builder.Services.AddScoped<IBasketService, BasketService>();
+            builder.Services.AddScoped<IFilterService, FilterService>();
+            builder.Services.AddScoped<IOrderingService, OrderingService>();
+            builder.Services.AddScoped<IProductService, ProductService>();
+            builder.Services.AddScoped<ISavedAddressService, SavedAddressService>();
 
             var app = builder.Build();
 
